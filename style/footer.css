@@ -1,0 +1,62 @@
+footer{
+  text-align: center;
+  background-color: rgba(21, 21, 21, 0.445);
+  backdrop-filter: blur(15px);
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 0.5rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 30rem;
+  z-index: 5;
+}
+
+footer .socmed-nav{
+  margin-bottom: 3rem;
+
+}
+
+footer .socmed-nav ul{
+  display: flex;
+  justify-content: center;
+  gap: 1.7rem;
+  list-style: none;
+}
+
+footer .socmed-nav li {
+  border: 1px solid white;
+  padding: 0.9rem;
+  padding-top: 0.9rem;
+  padding-bottom: 0.8rem;
+  border-radius: 50%;
+  animation: floating-up ease 2s infinite;
+  transition: 0.2s;
+  cursor: pointer;
+}footer .socmed-nav li:hover{
+  background-color: rgba(135, 135, 135, 0.212);
+}
+footer .socmed-nav li:nth-child(2){
+  animation: floating-down ease 2s infinite
+}
+footer .socmed-nav li:nth-child(4){
+  animation: floating-down ease 2s infinite
+}
+footer .socmed-nav li a .socmed-icon{
+  max-width: 1rem;
+}
+
+footer .email{
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+}
+
+footer .email span{
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  opacity: 0.5;
+  margin-bottom: 0.3rem;
+}

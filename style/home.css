@@ -1,0 +1,160 @@
+.home-section {
+  --gradient-color: linear-gradient(
+    to right,
+    rgb(245, 246, 207) 80%,
+    rgb(252, 252, 174) 20%,
+    rgba(249, 238, 119, 0.858) 
+  );
+  --super-gradient-color: linear-gradient(
+    to right,
+    rgb(245, 246, 207) 20%,
+    rgb(255, 255, 161) 80%,
+    var(--main-color)
+  );
+  --to-bottom-gradient-color: linear-gradient(
+    to top,
+    rgb(245, 246, 207) 80%,
+    rgb(255, 255, 161) 5%,
+    rgba(255, 243, 116, 0.858)
+  );
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18rem;
+  padding-top: 6rem;
+  column-gap: 8%;
+  row-gap: 1rem;
+}
+.profile-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 2;
+}
+.profile-detail :first-child {
+  color: var(--main-color);
+  font-size: var(--XS-Fsize);
+  margin-bottom: 4px;
+  opacity: 0;
+  animation: text-down 2s ease forwards;
+}
+
+.profile-detail .my-name {
+  font-size: clamp(var(--medium-Fsize), 7vw, var(--XL-Fsize));
+  font-weight: 500;
+  text-wrap: nowrap;
+  background: var( --to-bottom-gradient-color);
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 4px;
+  opacity: 0;
+  animation: name-down 2s ease forwards;
+}
+
+.profile-detail .display-skills {
+  font-size: clamp(var(--normal-Fsize) + 0.3rem , 5vw, var(--medium-Fsize));
+  font-weight: 500;
+  background: var( --to-bottom-gradient-color);
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+  transition: 0.5s;
+  opacity: 0;
+  animation: skill-down 2s ease forwards;
+}
+
+.profile-detail :nth-child(4) {
+  font-size: 0.75rem;
+  font-size: var(--XS-Fsize);
+  color: var(--white-super-transparent);
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: text-down 1s ease forwards;
+}
+.home-section .my-social-media-accounts {
+  height: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.my-social-media-accounts .social-media {
+  width: 1.3rem;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.2s;
+  opacity: 0;
+  animation: social-med-up 2s ease forwards;
+}
+
+.social-media:hover {
+  box-shadow: 0px 0px 17px 0px rgb(109, 106, 63);
+  border: none;
+}
+
+.profile-pic #first-layer {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 30px 0px rgb(30, 30, 14);
+  background: transparent;
+  animation: slide-from-right 0.8s ease-out;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+  animation: profile-pic-slide 1.5s ease forwards ;
+
+}
+
+.profile-pic #first-layer:hover {
+  box-shadow: 0px 0px 150px 0px rgb(30, 30, 14);
+}
+
+.profile-pic #first-layer #profile-img {
+  width: 91%;
+  height: 91%;
+  border-radius: 50%;
+  background: transparent;
+  object-fit: cover;
+  border: 2px solid rgb(222, 212, 68);
+  box-shadow: 0px 0px 20px 1px rgba(92, 90, 43, 0.87);
+}
+
+@media (width >= 38.5em) {
+  .home-section {
+    flex-direction: row;
+    margin-left: 0;
+    padding-top: 9rem;
+  
+  }
+  .profile-detail{
+    order: 1;
+    align-items: start;
+  }
+  .profile-detail .my-name {
+    background: var(--to-bottom-gradient-color);
+    color: transparent;
+    background-clip: text;
+  }
+
+  .profile-detail .display-skills {
+    background: var(--to-bottom-gradient-color);
+    color: transparent;
+    background-clip: text;
+  }
+  .home-section .my-social-media-accounts {
+   justify-content: left;
+  }
+  .profile-pic {
+    order: 2;
+  }
+  
+}

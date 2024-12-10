@@ -1,0 +1,79 @@
+.contact-section{
+  margin-bottom: 10rem;
+}
+.contact-section .section-name{
+  margin-inline: auto;
+  width: fit-content;
+  margin-bottom: 1rem;
+  font-size: calc(var(--XL-Fsize) + 0.3rem);
+  font-weight: 600;
+}
+.contact-section .subheading{
+  margin-inline: auto;
+  width: fit-content;
+  opacity: 0.6;
+  margin-bottom: 2rem;
+  color: var(--main-color);
+}
+
+form.f-flex{
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+}
+
+form .input{
+  opacity: 0;
+}
+
+form input, 
+form textarea{
+  width:  100%;
+  padding: 0.9rem;
+  margin-bottom: 10px;
+  font-size: var(--normal-Fsize);
+  background-color: rgba(10, 10, 10, 0.283);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(204, 204, 204, 0.183);
+  border-radius: 8px;
+  color: white;
+}
+form textarea{
+  height: 20rem;
+  margin-top: 0.8rem;
+}
+
+form input::placeholder, 
+form textarea::placeholder{
+ font-size: var(--normal-Fsize);
+ color: rgba(255, 255, 255, 0.52);
+}
+
+form #submit-btn{
+  width: fit-content;
+  margin-left: auto;
+  color: var(--main-color);
+  font-size: var(--normal-Fsize);
+  padding: 0.4rem 1.3rem;
+  border-radius: 8px;
+  border: 1px solid var(--main-color);
+  background: rgba(255, 255, 255, 0);
+}
+@media(width >= 767px){
+ form.f-flex{
+   flex-direction: row;
+   column-gap: 1rem;
+ }
+ form .input-container{
+  flex: 42%
+ }
+ form .txt-area-btn-container{
+  flex: 58%;
+ }
+ form textarea{
+  margin-top: 0rem;
+  width: 100%;
+}
+
+
+}
