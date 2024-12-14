@@ -64,7 +64,7 @@ export function RenderContent(){
    const aboutDetails = {
     myPhoto: 'profile.jpg',
     aboutMeFirstPrgrph: `Halo, perkenalkan nama saya Maulana Ihsan.
-    Saya lahir pada 31 Desember 2002 di Buntage, dan saat ini berusia 20 tahun. Saya memiliki latar belakang pendidikan hingga tingkat SMA, dengan minat besar pada dunia teknologi, khususnya di bidang pengembangan web dan aplikasi.`,
+    Saya lahir pada 31 Desember 2002 di Buntage. Saya memiliki latar belakang pendidikan hingga tingkat SMA, dengan minat besar pada dunia teknologi, khususnya di bidang pengembangan web dan aplikasi.`,
     aboutMeSecondPrgrph: `Saat ini, saya sedang fokus mempelajari dan mengembangkan proyek berbasis backend menggunakan Python, termasuk menggunakan framework seperti Flask dan Django. Saya percaya bahwa Python adalah bahasa pemrograman yang kuat untuk membangun aplikasi yang scalable dan efisien.`
    }
 
